@@ -4,6 +4,7 @@ Not all assets available:
 - XCode Pod sizes exceed GitLab free tier maximum
 - Login Scripts / Authentication Credentials Removed
 
+## Showcase Link:
 https://devpost.com/software/slug-tracker-modify
 
 ## Technical Details:
