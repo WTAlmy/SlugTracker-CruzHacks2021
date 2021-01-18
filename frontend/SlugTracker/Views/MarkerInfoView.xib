@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MarkerInfoView" id="iN0-l3-epB" customClass="MarkerInfoView" customModule="SlugTracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="418"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tortoise.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qar-tm-axC">
+                    <rect key="frame" x="80" y="57.666666666666657" width="126" height="295.66666666666669"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="5ev-At-VlD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my custom info window" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="av2-Fq-J5E">
+                    <rect key="frame" x="10" y="364" width="266" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qar-tm-axC" secondAttribute="trailing" constant="80" id="0am-Jn-jJG"/>
+                <constraint firstItem="av2-Fq-J5E" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="29x-pT-Pqd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="av2-Fq-J5E" secondAttribute="bottom" constant="10" id="Osw-9v-bGM"/>
+                <constraint firstItem="qar-tm-axC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="80" id="Vtm-Lh-5xO"/>
+                <constraint firstItem="av2-Fq-J5E" firstAttribute="top" secondItem="qar-tm-axC" secondAttribute="bottom" constant="10" id="aZ4-pC-ZER"/>
+                <constraint firstItem="qar-tm-axC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="bdh-ld-Oou"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="av2-Fq-J5E" secondAttribute="trailing" constant="10" id="jUG-aG-nAa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="image" destination="qar-tm-axC" id="RKp-Wj-0lQ"/>
+                <outlet property="infoTitle" destination="av2-Fq-J5E" id="vno-vh-3Ee"/>
+            </connections>
+            <point key="canvasLocation" x="-366.15384615384613" y="-1.4218009478672986"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tortoise.fill" catalog="system" width="128" height="66"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
