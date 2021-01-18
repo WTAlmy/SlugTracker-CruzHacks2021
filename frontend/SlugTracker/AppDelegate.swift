@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // providing Google Maps API key
-        GMSServices.provideAPIKey("AIzaSyA2uBWminMU8iLOl2R4RCbnOhZBPayis8g")
+        GMSServices.provideAPIKey("Insert your API key here")
         return true
     }
 
